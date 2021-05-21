@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="title">Password Generator</h1>
+      <div class="PasswordGeneralBox">
+        <h1>Generate a Password</h1>
+      <H3 class="password-display"id = "passwordDisplay">Your Secure Password</H3>
+      <form id="passwordGeneratorForm" class = "form">
+           <!--this is my slider for the page to select character length-->           
+           <div class="characteramountcontainer">    
+           <label for="characterAmountNumber" >Number Of Characters</label>
+   
+        <input type="range" min="1"max="128" value="10"
+            id="characterAmountRange">
+        <input class="numberinput" type="number" min="8"max="128" value= "8"
+            id="characterAmountNumber"> </div>
+      
+            <footer class="card-footer">      
+       <form class= "checkbox"></form>
+         <!--This is my checkbox for upper case-->
+     <label for="includeUpperCase">Include Upper Case</label>
+         <input type="checkbox" id="includeUpperCase">
+     <!--This is my checkbox for numbers-->
+     <label for="includeNumbers">Include Numbers</label>
+         <input type="checkbox" id="includeNumbers">
+     <!--This is my checkbox for symbols-->
+     <label for="includeSymbols">Include Symbols</label>
+         <input type="checkbox" id="includeSymbols">
+         </form>
+     <!--This is the button that makes the magic happen-->
+     <button class="btn" type="submit">Generate Password</button> 
+    </div>
+               
+        </footer>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
